@@ -1,4 +1,4 @@
 
 name = input("What's your name?")
 
-print("Hello " , format(name) + " !" ,end="")
+print("Hello {0}" .format(name) + " !" ,end="")
