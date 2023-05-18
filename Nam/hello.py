@@ -1,1 +1,2 @@
-#123123
+#出力
+print("Hello, world!")
