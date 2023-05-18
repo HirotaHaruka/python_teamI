@@ -11,7 +11,10 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+<<<<<<< HEAD
             "args": ["Taro Tokyo"]
+=======
+>>>>>>> origin/main
         }
     ]
 }
