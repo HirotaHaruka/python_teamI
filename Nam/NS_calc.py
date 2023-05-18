@@ -1,7 +1,7 @@
 import sys
 args = sys.argv
 
-#引数を半数に代入
+#引数を変数に代入
 input1 = args[1]
 input2 = args[2]
 input3 = args[3]
