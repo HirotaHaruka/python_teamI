@@ -6,4 +6,8 @@ input1 = args[1]
 input2 = args[2]
 input3 = args[3]
 
-print(int(input1) + int(input2) + int(input3),end="")
+num1 = int(input1)
+num2 = int(input2)
+num3 = int(input3)
+
+print(num1+num2+num3,end="")
