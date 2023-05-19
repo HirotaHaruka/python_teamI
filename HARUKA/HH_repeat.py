@@ -10,3 +10,8 @@ while True:
     elif s > 100:
         print("Over!", end="")
         break
+    
+if 100 % num == 0:
+    print("Just 100!", end="")
+else:
+    print("Over!", end="")
