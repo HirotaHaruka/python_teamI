@@ -15,26 +15,11 @@ noodles = ("ラーメン", "うどん", "パスタ")   #麺類をタプルで定
 
 #ここ以降にプログラムを書く
 
-if hm_class == "果物類":
-    hinmoku["リンゴ"] = hinmoku["リンゴ"]-price_down
-    if hinmoku["リンゴ"] < 0:hinmoku["リンゴ"] = hinmoku["リンゴ"] * -1 
-    hinmoku["みかん"] = hinmoku["みかん"]-price_down
-    if hinmoku["みかん"] < 0:hinmoku["みかん"] = hinmoku["みかん"] * -1 
-    hinmoku["バナナ"] = hinmoku["バナナ"]-price_down
-    if hinmoku["バナナ"] < 0:hinmoku["バナナ"] = hinmoku["バナナ"] * -1 
+hinmoku_cate = {"果物類":fruits,"酒類":alcohol,"麺類":noodles}
 
-if hm_class == "酒類":
-    hinmoku["ビール"] = hinmoku["ビール"]-price_down
-    if hinmoku["ビール"] < 0:hinmoku["ビール"] = hinmoku["ビール"] * -1 
-    hinmoku["日本酒"] = hinmoku["日本酒"]-price_down
-    if hinmoku["日本酒"] < 0:hinmoku["日本酒"] = hinmoku["日本酒"] * -1 
-if hm_class == "麺類":
-    hinmoku["ラーメン"] = hinmoku["ラーメン"]-price_down
-    if hinmoku["ラーメン"] < 0:hinmoku["ラーメン"] = hinmoku["ラーメン"] * -1 
-    hinmoku["うどん"] = hinmoku["うどん"]-price_down
-    if hinmoku["うどん"] < 0:hinmoku["うどん"] = hinmoku["うどん"] * -1 
-    hinmoku["パスタ"] = hinmoku["パスタ"]-price_down
-    if hinmoku["パスタ"] < 0:hinmoku["パスタ"] = hinmoku["パスタ"] * -1 
+for hinmoku_key in hinmoku_cate[hm_class]:
+    hinmoku[hinmoku_key] = hinmoku[hinmoku_key]-price_down
+    if hinmoku[hinmoku_key] <= 0 : hinmoku[hinmoku_key] = 1
 
 
 
