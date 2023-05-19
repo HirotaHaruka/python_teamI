@@ -9,6 +9,6 @@ info = {'東京':0.00 ,'品川':6.78,'新横浜':25.54,'名古屋':342.02,'京�
 result = info[station1]-info[station2]
 
 if result < 0:
-    result *= -1
+    result *= -1 
 
 print(format(result, '.2f'), end="")
