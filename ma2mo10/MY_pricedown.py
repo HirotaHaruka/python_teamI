@@ -23,6 +23,6 @@ elif hm_class == "麺類":
 
 for item in categoly_items:
     hinmoku[item] = hinmoku[item] - price_down
-    if hinmoku[item] < 0 : hinmoku[item] = 1
+    if hinmoku[item] <= 0 : hinmoku[item] = 1
 
 print(hinmoku, end="")
