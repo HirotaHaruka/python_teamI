@@ -1,7 +1,7 @@
 import sys
 num = int(sys.argv[1])
 n = int(num//2)
-l = ()
+l = []
 
 for i in range(2,n):
     if num % i == 0:
@@ -12,5 +12,7 @@ for i in range(2,n):
                 break
     if num < i :
         break
-
-print(l)
+if len(l) >=2:
+    print(l,end="")
+else:
+    print([num], end="")
