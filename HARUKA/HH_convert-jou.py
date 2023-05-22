@@ -8,6 +8,8 @@ def convert_jou(jou, unit="江戸間"):
     m2 = jou * base
     s = f"{unit}で{jou}畳は{m2}㎡"
     print(s)
+    
+
 convert_jou(6, "江戸間")
 convert_jou(6, "京間")
 convert_jou(6)
