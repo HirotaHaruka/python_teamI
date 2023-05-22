@@ -14,5 +14,5 @@ def calcvalue(num):
         print(str(num) + "は偶数")
 
 # コマンドラインで指定された引数の数に合わせて反復処理
-for i in range(len(args) - 1):
-    calcvalue(int(args[i + 1]))
+for num in args[1:]:
+    calcvalue(int(num))
