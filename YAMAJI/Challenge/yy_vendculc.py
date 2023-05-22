@@ -16,6 +16,7 @@ def out_change(possession_money):
             else:
                 print(f"{i}円玉：{digits}枚")
 
+# 購入のメインプログラム
 def vendingMachine():
     # 初期入力の処理
     while True:
@@ -64,6 +65,7 @@ def vendingMachine():
             # 残高が0になった場合
             elif possession_money == 0:
                 break
+        # 残高より高い商品を購入しようとした場合
         elif possession_money < vending_items[buy_item]:
             print("投入金額が不足しています。")
             
