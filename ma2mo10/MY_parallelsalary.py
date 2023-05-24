@@ -3,9 +3,9 @@ import sys
 
 args = sys.argv
 
-salary1 = args[1]
-salary2 = args[2]
-salary3 = args[3]
+salary1 = int(args[1])
+salary2 = int(args[2])
+salary3 = int(args[3])
 
 #calcsalaryの呼び出し
 print("支給額:{0}、税額:{1}".format(*(salary.calcsalary(salary1))))
