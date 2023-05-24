@@ -6,9 +6,10 @@ dic = {
     'ソーダ'            :   160,
     'コーンポタージュ'   :   130,
 }
+
 def buy_drink(money):
     """挿入されている金額から購入の是非を聞く関数"""
-    while True:
+    while True: # 金額が最低の商品以上かつ続けて購入する気があるなら繰り返す
         can_buy = ()
         for i in hinmoku:
             if dic[i] <= money:
