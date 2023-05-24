@@ -8,12 +8,13 @@ from sqlalchemy import Column, String, Integer, Date
 
 holiday_list = session.query(Holiday.holi_date).all()
 
-holi_list = []
+holi_list = [] #祝日の月日を取得
 for i in holiday_list:
     l = str(i).split(',')
     holi_day = int(l[-2][:-1])
     holi_month = int(l[-3])
     holi_list.append([holi_month, holi_day])
+
 args = sys.argv
 year, month, day = int(args[1][:4]),int(args[1][4:6]),int(args[1][6:]) #年月日に分割
 dt = date(year, month, day)
@@ -28,4 +29,6 @@ if flag_day == 1: #平日か休日化で料金の計算を分岐
     fee = adult_num * 2400 + child_num * 1500
 else:
     fee = adult_num * 2000 + child_num * 1200
+print(dt.strftime("%a"))
 print(fee, end="",)
+
