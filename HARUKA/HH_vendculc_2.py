@@ -83,7 +83,7 @@ class vendculc():
         else:
             print(f"{self.b}を購入します")
             return True
-
+    
     def Change_money(self):
         C_list = []
         C_pattern = [5000, 1000, 500, 100, 50, 10]
@@ -97,11 +97,8 @@ class vendculc():
                     print(f'{i}円札：{C_list[ids]}枚')
                 else:
                     print(f'{i}円玉：{C_list[ids]}枚')
-                
-    def displayBuyProduct(self):
-        for i in self.buy:
-            print(f'{i},')
-            
+                    
+    
     def main(self):
         vendculc.true_get_money(self)
         vendculc.buy_drink(self)
