@@ -3,14 +3,17 @@ from datetime import date
 from datetime import date
 from database import session 
 from tables import Holiday
+from sqlalchemy import Column, String, Integer, Date
+
 
 holiday_list = session.query(Holiday.holi_date).all()
+
 holi_list = []
 for i in holiday_list:
     l = str(i).split(',')
     holi_day = int(l[-2][:-1])
     holi_month = int(l[-3])
-    holi_list.append([holi_day,holi_month])
+    holi_list.append([holi_month, holi_day])
 args = sys.argv
 year, month, day = int(args[1][:4]),int(args[1][4:6]),int(args[1][6:]) #年月日に分割
 dt = date(year, month, day)
