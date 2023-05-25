@@ -1,9 +1,6 @@
 import sys
-import pymysql
 from datetime import date
 from database import session
-from database import Base
-from database import ENGINE
 from tables import Holiday
 from aqua_db import Attendnum
 
