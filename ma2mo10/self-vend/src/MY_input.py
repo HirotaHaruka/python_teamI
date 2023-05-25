@@ -1,4 +1,5 @@
 #入力関係のモジュール
+from MY_return_change import changecalc, changedisplay
 
 def input_money():
    '''入力金額を受け取る関数'''
@@ -19,6 +20,18 @@ def input_money():
          return money
 
 
+def input_item(money, item_dict):
+   '''商品名の入力を受け取る関数'''
+   item_name = input("何を購入しますか（商品名/cancel）")
 
+   #cancelが入力された場合お釣りを返す
+   while True:
+      if item_name == "cancel":
+         changedisplay(changecalc(money))
+         return ""
+      elif item_name in item_dict:
+         item_name = input("商品名が間違っています。正しい商品名を入力してください")
+      else:
+         return item_name
    
 
