@@ -1,7 +1,8 @@
-import datetime
-from DB.yy_database import session
-from DB.yy_aquaattendtables import AttendNum
 import sys
+sys.path.append("./DB")
+import datetime
+from yy_database import session
+from yy_aquaattendtables import AttendNum
 args = sys.argv
 
 # コマンドライン入力の受け取り

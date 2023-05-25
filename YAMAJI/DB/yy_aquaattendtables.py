@@ -1,7 +1,7 @@
 import sys
 from sqlalchemy import Column, String, Date, Integer
-from DB.yy_database import Base
-from DB.yy_database import ENGINE
+from yy_database import Base
+from yy_database import ENGINE
 
 # テーブル：Holidayの定義
 class AttendNum(Base):
