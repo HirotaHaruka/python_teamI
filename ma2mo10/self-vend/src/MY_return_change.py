@@ -1,7 +1,7 @@
 #お釣り関係のモジュール
 
 
-def changecalc(change):
+def changecalc(change:int) -> dict:
     '''お釣りを計算する'''
 
     #貨幣の数をカウントする変数
@@ -57,7 +57,7 @@ def changecalc(change):
     return change_dict
 
 #求めたお釣りを表示
-def changedisplay(change_dict):
+def changedisplay(change_dict:dict) -> None:
     '''お釣りの表示'''
     for change in change_dict:
         if change_dict[change] > 0:
