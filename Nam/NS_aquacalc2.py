@@ -21,8 +21,11 @@ day = dt.strftime("%a")
 #
 i=1
 holiday_list = session.query(Holiday.holi_date).filter_by(holi_date = dt).count()
-
 i = holiday_list+1
+
+entryDate_list = session.query(Attendnum.entry_date).filter_by(entry_date = dt).count()
+i = entryDate_list+1
+
 
 
 b = int(args[2]) #大人の人数
