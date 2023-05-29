@@ -1,7 +1,7 @@
 #商品の表示や何を購入するかの入力受付に関するモジュール
 import MY_input as MYin
 
-def display_item(item_dict):
+def display_item(item_dict:dict) -> str:
     #商品リストを表示
     for item in item_dict:
         print(f"{item}：{item_dict[item]}円")
